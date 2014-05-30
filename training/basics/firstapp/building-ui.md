@@ -1,9 +1,20 @@
 # Building a Simple User Interface
 
 In this lesson you'll create a simple user interface with a text field
-and a button. In the following lesson, you'll respond when the button
-is pressed by sending the content of the text field to another activity.
+and a button.
 
+## First some basics - Activities and Intents
+
+Activities and Intents are two of the main components of an Android application. Activities generally correspond to a single screen on your device. Intents are fired to indicate what you want to do next (e.g., open another Activity).
+
+So to get started with an app we
+
+1. Go back to that nice directory that you are planning on sticking your apps in.
+2. Type `ruboto gen app --package org.rubyandroid.new_demo`
+
+So now we can talk about what `gen app` does. It creates your whole project including
+`new_demo/src/new_demo_activity.rb` which is the only file you'll need to edit for these
+first few lessons.
 
 ## Create a Linear Layout
 
@@ -41,7 +52,7 @@ end
 ```
 Now that it's imported we can use it. But hold on just a second, if you don't 
 know what a layout is don't stress. It's just a container for the other widgets.
-(A widget is a general term for things like buttons edit boxes, text boxes etc.)
+(A widget is a general term for things like buttons, edit boxes, text boxes etc.)
 A linear layout will either stack the widgets on top of 
 each other (`orientation: vertical`) or it will have them flow side by side (`orientation:
 horizontal`). 
@@ -86,10 +97,14 @@ class NewDemoActivity
 end
 ```
 
-Ta da. You did it! Now you have a working app. Go ahead and try it out!
+Ta da. You did it! Now you have a working app. Go ahead and try it out by running `rake install start`. Or
+if you already did this and just want to update your app to reflect the new changes run
 
-(If you don't know how to try it out, go back and re-read 'Running Your Application'
-super important)
+`rake update_scripts`
+
+
+<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex1.png" alt="Tiny EditText" width="250px" />
+
 
 You'll notice that the box starts out small and gets bigger as you type stuff in. Lets
 make this thing a bit prettier by stating what its width should be ahead of time. The 
@@ -111,6 +126,10 @@ class NewDemoActivity
   end
 end
 ```
+
+<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex2.png" alt="Bigger EditText" width="250px" />
+
+
 Hey nifty. Here's how weight works:
 if I have two widgets each of weight 1 then they'll both get 50% of the screen. If
 I have two objects of weight 1 and one object of weight 2 then that one will get 
@@ -137,6 +156,8 @@ end
 ```
 
 Once again, run the program to see what it looks like.
+
+<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex3.png" alt="I'll give you a hint." width="250px" />
 
 (If you're serious about learning this stuff from scratch, I highly highly recommend that you
 run the app each time after you update a line of code. You'll get to see it in the flesh. Way
@@ -168,6 +189,9 @@ class NewDemoActivity
   end
 end
 ```
+
+<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex4.png" alt="ooh button" width="250px" />
+
 
 And that's it. Crazy simple! Now let's start talking to the button!
 
