@@ -169,3 +169,5 @@ end
 
 And that's it. Crazy simple! Now let's start talking to the button!
 
+[Previous Step](https://github.com/KCErb/hello-ruboto/blob/master/lessons/Lesson1/lesson1-2.md) | 
+[Next Step](https://github.com/KCErb/hello-ruboto/blob/master/lessons/Lesson1/lesson1-4.md)
