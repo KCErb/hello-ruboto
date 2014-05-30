@@ -41,8 +41,8 @@ end
 ```
 Now that it's imported we can use it. But hold on just a second, if you don't 
 know what a layout is don't stress. It's just a container for the other widgets.
-(What's a widget? Don't feel dumb, a widget is a general term for things like buttons
-edit boxes, text boxes etc). A linear layout will either stack the widgets on top of 
+(A widget is a general term for things like buttons edit boxes, text boxes etc.)
+A linear layout will either stack the widgets on top of 
 each other (`orientation: vertical`) or it will have them flow side by side (`orientation:
 horizontal`). 
 
@@ -111,13 +111,12 @@ class NewDemoActivity
   end
 end
 ```
-Hey nifty. We'll play with weight at the end to get a better idea of what it does
-but for now, just think of it as something that assigns a weight to the widget. So
+Hey nifty. Here's how weight works:
 if I have two widgets each of weight 1 then they'll both get 50% of the screen. If
 I have two objects of weight 1 and one object of weight 2 then that one will get 
-1/2 the screen while the little weight 1s will get only 1/4 each.
+1/2 the screen while the little `weight: 1`s will get only 1/4 each.
 
-Ok, the other thing making that thing look weird is that usually those things
+Ok, the other thing making the text field look weird is that usually those things
 don't start out blank. We call that text the "hint":
 
 ```ruby
@@ -136,9 +135,12 @@ class NewDemoActivity
   end
 end
 ```
-If you're serious about learning this stuff from scratch, I highly highly recommend that you
+
+Once again, run the program to see what it looks like.
+
+(If you're serious about learning this stuff from scratch, I highly highly recommend that you
 run the app each time after you update a line of code. You'll get to see it in the flesh. Way
-better than those wimpy screen shots.
+better than those wimpy screen shots.)
 
 Anyways, good job. Let's move on.
 
