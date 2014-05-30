@@ -1,3 +1,3 @@
 # Creating an Android Project
-
-[Next Lesson](https://github.com/KCErb/hello-ruboto/blob/master/lessons/Lesson1/lesson1-2.md)
+[Back to intro](https://github.com/KCErb/hello-ruboto/blob/master/lessons/Lesson1/Lesson1-intro.md) | 
+[Next Step](https://github.com/KCErb/hello-ruboto/blob/master/lessons/Lesson1/lesson1-2.md)
