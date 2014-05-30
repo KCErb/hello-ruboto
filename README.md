@@ -10,4 +10,4 @@ development.
 So go ahead and dig into these lessons!
 
 
-(Lesson 1)[https://github.com/KCErb/hello-ruboto/blob/master/lessons/Lesson1/Lesson1-intro.md]
+[Lesson 1](https://github.com/KCErb/hello-ruboto/blob/master/lessons/Lesson1/Lesson1-intro.md)
