@@ -7,7 +7,7 @@ attempts to exactly copy their content with one major difference **These instruc
 
 That means we won't be writing any thing but sweet sweet Ruby.
 
-# training/basics
+# Lessons
 
 [Building Your First App](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/index.md)
 - [Creating an Android Project](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/creating-project.md)

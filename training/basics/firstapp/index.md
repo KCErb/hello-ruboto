@@ -1,4 +1,3 @@
-#Building Your First Application
 # Building Your First App
 
 Welcome to app development with Ruboto! In order to get started we need to get your
