@@ -16,7 +16,7 @@ the app store. This app has the stuff Ruboto needs to do its magic.
 
 If you see the following on your screen then all is well and you are ready to start begin your training!
 
-![What hath Matz wrought?!](https://github.com/KCErb/hello-ruboto/blob/master/static/firstapp/quick_start.png)
+![quick start](https://github.com/KCErb/hello-ruboto/blob/master/static/firstapp/quick_start.png "What hath Matz wrought?!")
 
 If not, don't sweat it! Please email me so that I can make these instructions better. The startup
 phase is the hardest part of this whole process and I want to make it awesome, so please contact me!
