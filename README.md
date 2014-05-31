@@ -3,9 +3,11 @@
 This is a tutorial for folks that know a bit about ruby and nothing about writing code for Android devices.
 
 It walks step by step through the tutorials found at http://developer.android.com/training/index.html. And
-attempts to exactly copy their content with one major difference **These instructions are for Ruboto**! Yay
+attempts to copy their content with one major difference **These instructions are for Ruboto**! Yay
 
 That means we won't be writing any thing but sweet sweet Ruby.
+
+Please feel free to make this better! Open an issue, submit a pull request, send me an email.
 
 # Lessons
 
