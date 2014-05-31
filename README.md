@@ -14,3 +14,5 @@ That means we won't be writing any thing but sweet sweet Ruby.
 - [Running Your App](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/running-app.md)
 - [Building a Simple User Interface](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/building-ui.md)
 - [Starting Another Activity](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/starting-activity.md)
+
+[Adding the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/index.md)
