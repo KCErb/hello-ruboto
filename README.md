@@ -16,3 +16,7 @@ That means we won't be writing any thing but sweet sweet Ruby.
 - [Starting Another Activity](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/starting-activity.md)
 
 [Adding the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/index.md)
+- [Setting Up the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/setting-up.md)
+- [Adding Action Buttons](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/adding-buttons.md)
+- [Styling the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/styling.md)
+- [Overlaying the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/overlaying.md)
