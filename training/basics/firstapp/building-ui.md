@@ -9,10 +9,10 @@ Activities and Intents are two of the main components of an Android application.
 
 So to get started with an app we
 
-1. Go back to that nice directory that you are planning on sticking your apps in.
-2. Type `ruboto gen app --package org.rubyandroid.new_demo`
+1. Go back to that nice directory that you are planning on sticking your apps in. And then
+2. Type `ruboto gen app --package org.rubyandroid.new_demo`.
 
-So now we can talk about what `gen app` does. It creates your whole project including
+Now we can talk about what `gen app` does. It creates your whole project including
 `new_demo/src/new_demo_activity.rb` which is the only file you'll need to edit for these
 first few lessons.
 
@@ -34,7 +34,9 @@ class NewDemoActivity
 end
 ```
 
-Did you do it? Super!
+Did you do it? Super! (If you want to read a bit more about this class, and how it fits into
+the grand scheme of things, you may want to give [this](https://github.com/ruboto/ruboto/wiki/Using-Activities-and-Intents#activity-basics) 
+a read.
 
 Now the first thing we need to do is import the Linear Layout widget like so:
 
@@ -53,9 +55,8 @@ end
 Now that it's imported we can use it. But hold on just a second, if you don't 
 know what a layout is don't stress. It's just a container for the other widgets.
 (A widget is a general term for things like buttons, edit boxes, text boxes etc.)
-A linear layout will either stack the widgets on top of 
-each other (`orientation: vertical`) or it will have them flow side by side (`orientation:
-horizontal`). 
+A linear layout will either stack the widgets on top of each other 
+(`orientation: vertical`) or it will have them flow side by side (`orientation: horizontal`). 
 
 OK, so let's just stick a blank one in there and go on from here:
 ```ruby
