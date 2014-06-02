@@ -8,11 +8,11 @@ device before we go on.
 
 1. Go to a new clean directory where you want to put some projects.
 
-2. Run `ruboto gen app --package org.ruboto.example.quick_start`.
+2. In the terminal run `ruboto gen app --package org.ruboto.example.quick_start`.
 
-3. Go into the directory that ruboto just created `cd quick_start`
+3. Go into the directory that ruboto just created `cd quick_start`.
 
-4. Build it via `rake` (this generates the apk at `bin/QuickStart-debug.apk`)
+4. Build it by running `rake` (this generates the apk at `bin/QuickStart-debug.apk`).
 
 
 [Previous - Building Your First App](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/index.md) | 
