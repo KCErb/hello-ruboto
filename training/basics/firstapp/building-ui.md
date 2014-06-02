@@ -12,9 +12,9 @@ So to get started with an app we
 1. Go back to that nice directory that you are planning on sticking your apps in. And then
 2. Type `ruboto gen app --package org.rubyandroid.new_demo`.
 
-Now we can talk about what `gen app` does. It creates your whole project including
-`new_demo/src/new_demo_activity.rb` which is the only file you'll need to edit for these
-first few lessons.
+`ruboto gen app` creates your whole project including `new_demo/src/new_demo_activity.rb` which is the only file you'll need to edit for these first few lessons.
+
+(For more details on the files created, and other options (besides `--package`) that you can pass to `ruboto gen app` you should definitely read [this](https://github.com/ruboto/ruboto/wiki/How-Ruboto-Works))
 
 ## Create a Linear Layout
 
@@ -36,7 +36,7 @@ end
 
 Did you do it? Super! (If you want to read a bit more about this class, and how it fits into
 the grand scheme of things, you may want to give [this](https://github.com/ruboto/ruboto/wiki/Using-Activities-and-Intents#activity-basics) 
-a read.
+a read.)
 
 Now the first thing we need to do is import the Linear Layout widget like so:
 
@@ -78,7 +78,7 @@ end
 
 ## Add a Text Field
 
-So for our first widget, let's just do a simple happy little text field. Again
+So for our first widget, let's just do a simple happy little text field (the thing that you type text into). Again
 the first step is importing the text field widget called `EditText`:
 
 ```ruby
@@ -99,10 +99,8 @@ end
 ```
 
 Ta da. You did it! Now you have a working app. Go ahead and try it out by running `rake install start`. Or
-if you already did this and just want to update your app to reflect the new changes run
-
-`rake update_scripts`
-
+if you already did this and just want to update your app to reflect the new changes run `rake update_scripts` and 
+restart your app. As long as your changes are in your ruby files then `rake_update_scripts` will update your app.
 
 <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex1.png" alt="Tiny EditText" width="250px" />
 
@@ -132,12 +130,13 @@ end
 
 
 Hey nifty. Here's how weight works:
-if I have two widgets each of weight 1 then they'll both get 50% of the screen. If
-I have two objects of weight 1 and one object of weight 2 then that one will get 
+if I have two widgets each of `weight: 1` then they'll both get 50% of the screen. If
+I have two objects of `weight: 1` and one object of `weight: 2` then that one will get 
 1/2 the screen while the little `weight: 1`s will get only 1/4 each.
 
 Ok, the other thing making the text field look weird is that usually those things
-don't start out blank. We call that text the "hint":
+don't start out blank. They usually have some kind of faint gray text that disappears
+when you click on them. That text is called the "hint":
 
 ```ruby
 require 'ruboto/widget'
@@ -161,8 +160,8 @@ Once again, run the program to see what it looks like.
 <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex3.png" alt="I'll give you a hint." width="250px" />
 
 (If you're serious about learning this stuff from scratch, I highly highly recommend that you
-run the app each time after you update a line of code. You'll get to see it in the flesh. Way
-better than those wimpy screen shots.)
+run the app each time after you update a line of code. You'll get to see it in the flesh and you'll
+catch errors before they get to be too many.)
 
 Anyways, good job. Let's move on.
 
