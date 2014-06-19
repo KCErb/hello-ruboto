@@ -2,12 +2,12 @@
 
 This is a tutorial for folks that know a bit about ruby and nothing about writing code for Android devices.
 
-It more or less follows the tutorials found at http://developer.android.com/training/index.html. And
-attempts to copy their content with one major difference **These instructions are for Ruboto**! Yay
+It more or less follows the tutorials found at http://developer.android.com/training/index.html, and
+attempts to copy their content with one major difference **These instructions are for Ruboto**. Yay!
 
-That means we won't be writing any thing but sweet sweet Ruby.
+That means we won't be writing anything but sweet sweet Ruby.
 
-Please feel free to make this better! Open an issue, submit a pull request, send me an email.
+Please feel free to make this better! Open an issue, submit a pull request, or send me an email.
 
 # Lessons
 
