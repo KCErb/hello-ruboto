@@ -5,8 +5,8 @@ Now we'll add some code that starts a new activity (takes you to a new screen) w
 Send button. In non-Ruboto android development, the dogma is we always create an intent and then pass the
 intent to the method that starts our activity.
 
-But in Ruboto there are two ways to create and start a new activity without explicitily defining the intent.
-Next we'll demonstrate both methods and then at the end, breifly discuss when in Ruboto we *do* need to explicitly
+But in Ruboto there are two ways to create and start a new activity without explicitly defining the intent.
+Next we'll demonstrate both methods and then at the end, briefly discuss when in Ruboto we *do* need to explicitly
 create the intent.
 
 But first we need to
@@ -75,7 +75,7 @@ it has a method called `set_on_click_listener` which button inherited from it.
 
 ## Starting A Block-based Activity
 
-We'll want to start activites this way primarily when we want a small simple activity that
+We'll want to start activities this way primarily when we want a small simple activity that
 needs outside information (such as porting text typed into the Edit Text into a new view).
 
 First we need to call `start_ruboto_activity` with a block. Here's the template from the [Ruboto Wiki](https://github.com/ruboto/ruboto/wiki/Using-Activities-and-Intents#block-based-activities) page on the subject:
@@ -268,7 +268,7 @@ end
 
 Go ahead and check it out on your own device!
 
-2) Note that after you've displayed your message, you can go back and enter a new message via the back arrow. This functionality comes from the fact that the new activity is a child view of your orignal view. But we'll get more into views later. (There's a diagram and a few words on the concept at the top of [this page](http://developer.android.com/training/basics/firstapp/building-ui.html).
+2) Note that after you've displayed your message, you can go back and enter a new message via the back arrow. This functionality comes from the fact that the new activity is a child view of your original view. But we'll get more into views later. (There's a diagram and a few words on the concept at the top of [this page](http://developer.android.com/training/basics/firstapp/building-ui.html).
 
 3) I said at the beginning that I'd give more info on when to use intents. I think examples are better than talking. So All I'll say now is you'll mainly want to explicitly define an intent when you are using an external activity like Maps, GPS, or Camera. (See [link](https://github.com/ruboto/ruboto/wiki/Using-Activities-and-Intents#opening-3rd-party-apps-called-in-the-context-of-an-activity))
 
