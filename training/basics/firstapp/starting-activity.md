@@ -23,7 +23,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText, :Button
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -46,7 +46,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText, :Button
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -99,7 +99,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText, :Button
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -156,7 +156,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText, :Button, :TextView
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -193,7 +193,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText, :Button
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -239,7 +239,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText, :Button
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     set_title "My First App"

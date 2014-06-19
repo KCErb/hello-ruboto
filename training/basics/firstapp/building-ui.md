@@ -10,15 +10,15 @@ Activities and Intents are two of the main components of an Android application.
 So to get started with an app we
 
 1. Go back to that nice directory that you are planning on sticking your apps in. And then
-2. Type `ruboto gen app --package org.rubyandroid.new_demo`.
+2. Type `ruboto gen app --package org.rubyandroid.first_app`.
 
-`ruboto gen app` creates your whole project including `new_demo/src/new_demo_activity.rb` which is the only file you'll need to edit for these first few lessons.
+`ruboto gen app` creates your whole project including `first_app/src/first_app_activity.rb` which is the only file you'll need to edit for these first few lessons.
 
 (For more details on the files created, and other options (besides `--package`) that you can pass to `ruboto gen app` you should definitely read [this](https://github.com/ruboto/ruboto/wiki/How-Ruboto-Works))
 
 ## Create a Linear Layout
 
-Open the `new_demo_activity.rb` file from the `src/` directory. The template
+Open the `first_app_activity.rb` file from the `src/` directory. The template
 that Ruboto beautifully generates for you is neat, but we're going to throw it
 all away and start from scratch. So go ahead and replace the contents of the file
 with the following:
@@ -26,7 +26,7 @@ with the following:
 ```ruby
 require 'ruboto/widget'
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view =
@@ -45,7 +45,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view =
@@ -64,7 +64,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -86,7 +86,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -114,7 +114,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -143,7 +143,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
@@ -177,7 +177,7 @@ require 'ruboto/widget'
 
 ruboto_import_widgets :LinearLayout, :EditText, :Button
 
-class NewDemoActivity
+class FirstAppActivity
   def on_create(bundle)
     super
     self.content_view = 
