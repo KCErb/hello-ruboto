@@ -268,9 +268,9 @@ end
 
 Go ahead and check it out on your own device!
 
-2) Note that after you've displayed your message, you can go back and enter a new message via the back arrow. This functionality comes from the fact that the new activity is a child view of your original view. But we'll get more into views later. (There's a diagram and a few words on the concept at the top of [this page](http://developer.android.com/training/basics/firstapp/building-ui.html).
+2) Note that after you've displayed your message, you can go back and enter a new message via the back arrow. This functionality comes from the fact that the new activity is a child view of your original view. But we'll get more into views later. (There's a diagram and a few words on the concept at the top of [this page](http://developer.android.com/training/basics/firstapp/building-ui.html).)
 
-3) I said at the beginning that I'd give more info on when to use intents. I think examples are better than talking. So All I'll say now is you'll mainly want to explicitly define an intent when you are using an external activity like Maps, GPS, or Camera. (See [link](https://github.com/ruboto/ruboto/wiki/Using-Activities-and-Intents#opening-3rd-party-apps-called-in-the-context-of-an-activity))
+3) I said at the beginning that I'd give more info on when to use intents. I think examples are better than talking. So all that I'll say now is you'll want to explicitly define an intent when you are using an external activity like Maps, GPS, or Camera. (See [link](https://github.com/ruboto/ruboto/wiki/Using-Activities-and-Intents#opening-3rd-party-apps-called-in-the-context-of-an-activity))
 
 
 Congratulations! You have finished the first lesson. You now officially know how to build a simple UI and have it create and talk to other activities.
