@@ -8,5 +8,4 @@ put settings and other tools.
 Let's learn how to make one!
 
 
-[Back to Main](https://github.com/KCErb/hello-ruboto/blob/master/README.md) | 
-[Start!](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/setting-up.md)
+[Back to Main](https://github.com/KCErb/hello-ruboto/blob/master/README.md) | [Start!](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/setting-up.md)
