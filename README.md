@@ -20,5 +20,5 @@ Please feel free to make this better! Open an issue, submit a pull request, or s
 [Adding the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/index.md)
 - [Setting Up the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/setting-up.md)
 - [Adding Action Buttons](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/adding-buttons.md)
-- [Styling the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/styling.md)
-- [Overlaying the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/overlaying.md)
+- [Responding to Buttons](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/responding.md)
+- [Other Features of the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/other-features.md)
