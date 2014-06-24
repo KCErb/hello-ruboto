@@ -11,15 +11,15 @@ For starters let's talk about the MenuItem class.
 
 When you want to use a Java class like `MenuItem` you have two options
 
-1. Use the full name of the class. In the example on the previous page that's `android.view.MenuItem`. Go ahead and search for `MenuItem` over at the API website I just linked to. Without even going to the results, the first item in the drop down list should be `android.view.MenuItem`. 
+1) Use the full name of the class. In the example on the previous page that's `android.view.MenuItem`. Go ahead and search for `MenuItem` over at the API website I just linked to. Without even going to the results, the first item in the drop down list should be `android.view.MenuItem`. 
 
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/api_guides_search.png" alt="Don't click yet!" width="250px" />
+  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/api_guides_search.png" alt="Don't click yet!" width="500px" />
 
 
 That tells you the name of the class. Now go ahead and click on that search result to have a look at the API for that class. You can see if you scroll down a bit a list of constants that this class gives you access to such as `SHOW_AS_ACTION_IF_ROOM`. You can also see methods it has such as `add`.
 
-2. It's not convenient to always address your `MenuItem` by its full name `android.view.MenuItem` so Ruboto gives you a better way: just use `java_import` to import the class:
+2) It's not convenient to always address your `MenuItem` by its full name `android.view.MenuItem` so Ruboto gives you a better way: just use `java_import` to import the class:
 
 ```ruby
 require 'ruboto/widget'
@@ -50,7 +50,7 @@ end
 
 When one of your options is selected the `on_options_item_selected` callback gets called. Let's take a look at the API to see how this thing should work. Go on over to the [API guides](http://developer.android.com/guide/index.html) and search for 'onOptionsItemSelected'. You won't get a quick result this time, but if you press enter the first result should be the API for `android.app.Activity`. This is a big fat important class. To find out why the search tool brough you here use your browser's find tool (usually command+f or ctrl+f) to find it on the page.
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/onoptions_api.png" alt="Don't click yet!" width="250px" />
+  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/onoptions_api.png" alt="Read carefully" width="500px" />
 
 The field at left that says `boolean` tells us that the method should return either true or false. At right we see that `onOptionsItemSelected` (which we interpret as `on_options_item_selected`) is called whenever an options item is selected, and it makes that menuitem available.
 
