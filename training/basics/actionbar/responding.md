@@ -150,7 +150,7 @@ class ActionBarActivity
  
     #add settings
     item = menu.add(ni, 2, ni, "Settings")
-    item.show_as_action = android.view.MenuItem::SHOW_AS_ACTION_NEVER
+    item.show_as_action = MenuItem::SHOW_AS_ACTION_NEVER
  
     #return true
     true 
@@ -170,7 +170,7 @@ end
 
 # Let's Close With a Toast 
 
-Hopefully by now you know how to add buttons, give them id numbers, use the APIs a bit, and that's great. But how can you test something as you go? There are a few tools (most notably IRB which we'll get to in another lesson), but right now I'll show you a kind of cute one that I like to use sometimes. I won't explain much on this one both because it is simple and because I want you to get in the habit of looking things up.
+Hopefully by now you know how to add buttons, give them id numbers, use the APIs a bit, and that's great. But how can you test something as you go? There are a few tools (most notably IRB which we'll get to in another lesson), but right now I'll show you a little cute one that I like to use sometimes. I won't explain much on this one both because it is simple and because I want you to get in the habit of looking things up.
 
 ```ruby
 require 'ruboto/widget'
@@ -199,7 +199,7 @@ class ActionBarActivity
  
     #add settings
     item = menu.add(ni, 2, ni, "Settings")
-    item.show_as_action = android.view.MenuItem::SHOW_AS_ACTION_NEVER
+    item.show_as_action = MenuItem::SHOW_AS_ACTION_NEVER
  
     #return true
     true 
