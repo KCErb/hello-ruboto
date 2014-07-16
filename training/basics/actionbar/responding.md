@@ -5,7 +5,7 @@ Now that your app has a search button let's learn how to get the app to do somet
 
 ## A Quick Note on Syntax
 
-If you're like me, then when you saw `SHOW_AS_ACTION_IF_ROOM` on the previous page you thought "How would I know about that constant without a tutorial"? Where can I look that sort of stuff up? The answer is the [API guides](http://developer.android.com/guide/index.html). Translating the API guides into ruboto is a key skill which you will need to develop in order to master development for Android via ruboto. As we go along I'll start pointing you to the API guides. I highly recommend that you go check them out so that you get used to reading them alongside these tutorials.
+If you're like me, then when you saw `SHOW_AS_ACTION_IF_ROOM` on the previous page you thought "How would I know about that constant without a tutorial"? Where can I look that sort of stuff up? The answer is the [API guides](http://developer.android.com/guide/index.html) and the [documentation](http://developer.android.com/reference/packages.html). Translating the documentation into ruboto is a key skill which you will need to develop in order to master development for Android via ruboto. As we go along I'll start pointing you to the documentation. I highly recommend that you go check them out so that you get used to reading them alongside these tutorials.
 
 For starters let's talk about the MenuItem class. 
 
@@ -48,7 +48,7 @@ end
 
 ## Responding to Buttons - The Method
 
-When one of your options is selected the `on_options_item_selected` callback gets called. Let's take a look at the API to see how this thing should work. Go on over to the [API guides](http://developer.android.com/guide/index.html) and search for 'onOptionsItemSelected'. You won't get a quick result this time, but if you press enter the first result should be the API for `android.app.Activity`. This is a big fat important class. To find out why the search tool brough you here use your browser's find tool (usually command+f or ctrl+f) to find it on the page.
+When one of your options is selected the `on_options_item_selected` callback gets called. Let's take a look at the API to see how this thing should work. Go on over to the [documentation](http://developer.android.com/reference/packages.html) and search for 'onOptionsItemSelected'. You won't get a quick result this time, but if you press enter the first result should be the documentation for `android.app.Activity`. This is a big fat important class. To find out why the search tool brough you here use your browser's find tool (usually command+f or ctrl+f) to find it on the page.
 
   <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/onoptions_api.png" alt="Read carefully" width="500px" />
 
@@ -112,7 +112,7 @@ The best thing to do with the item once you've got it inside of the `on_options_
 
 But in order to use that, we need to give each of our menu items an id. It was actually kind of hard for me to figure out how to do this. So I'll walk you through my process so that you can solve tough problems too.
 
-* First I tried things like `item.set_id = 1` or `item.id = 1` (I would place that in `on_create_options_menu`). But those failed, and if you look at the [MenuItem API](http://developer.android.com/reference/android/view/MenuItem.html) you'll see that a MenuItem doesn't have a setID method.
+* First I tried things like `item.set_id = 1` or `item.id = 1` (I would place that in `on_create_options_menu`). But those failed, and if you look at the [MenuItem docs](http://developer.android.com/reference/android/view/MenuItem.html) you'll see that a MenuItem doesn't have a setID method.
 
 * Next I googled around for "how to set menu item id android" and found [this answer](http://stackoverflow.com/questions/8386790/setting-itemid-in-options-menu).
 
