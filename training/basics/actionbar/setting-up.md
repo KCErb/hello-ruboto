@@ -10,7 +10,7 @@ building an app for API 11 or greater.
 We'll use `ruboto gen app` again to make our application. Only this time we'll give our command
 line tool some options to specify which API levels we are developing for.
 
-(If you're new to Android development you may want to read some of [this](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) to learn a bit more about the difference between an *API level* and a *version*.)
+(If you're new to Android development, you may want to read some of [this](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels) to learn a bit more about the difference between an *API level* and a *version*.)
 
 
 `ruboto gen app --package org.ruboto.action_bar --target=android-19 --min-sdk=android-15`.
@@ -23,10 +23,10 @@ you're on something older than KitKat).
 (Also Note: if you want to use the action bar with API 10 or below. It is possible, but I shall not speak 
 of such dark things in this happy place.)
 
-Now run `cd action_bar` followed by `rake install start`.
+Now do `cd action_bar` followed by `rake install start`.
 
 (If you just did `rake`, the app would install but not start. I recommend `rake install start`
- because I like to see the app start to prove that everything is working as expected.)
+ because I like to see the app start, to prove that everything is working as expected.)
 
 Next we'll just create our base app by replacing the contents of `/src/action_bar_activity.rb` with
 
@@ -53,9 +53,9 @@ If you run `rake update_scripts:restart` or `rake update_scripts start` then you
 ## Changing the API level
 
 So the above works great if you know right from the start what APIs you want to develop for.
-But what if you need to change target and min SDK during development? Take a look at [this](http://developer.android.com/about/dashboards/index.html#Platform)
+But what if you need to change target and min SDK during development? (Take a look at [this](http://developer.android.com/about/dashboards/index.html#Platform)
 neat graph that Android provides to get an idea of how many people in the world are on which
-versions of Android.
+versions of Android.)
 
 We won't do this often, but we'll need to edit the manifest file found in `\AndroidManifest.xml`.
 
