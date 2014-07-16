@@ -5,7 +5,7 @@ Now that your app has a search button let's learn how to get the app to do somet
 
 ## A Quick Note on Syntax
 
-If you're like me, then when you saw `SHOW_AS_ACTION_IF_ROOM` on the previous page you thought "How would I know about that constant without a tutorial"? Where can I look that sort of stuff up? The answer is the [API guides](http://developer.android.com/guide/index.html) and the [documentation](http://developer.android.com/reference/packages.html). Translating the documentation into ruboto is a key skill which you will need to develop in order to master development for Android via ruboto. As we go along I'll start pointing you to the documentation. I highly recommend that you go check them out so that you get used to reading them alongside these tutorials.
+If you're like me, then when you saw `SHOW_AS_ACTION_IF_ROOM` on the previous page you thought "How would I know about that constant without a tutorial"? Where can I look that sort of stuff up? The answer is the [API guides](http://developer.android.com/guide/index.html) and the [documentation](http://developer.android.com/reference/packages.html) (there's a big difference). Translating the documentation into ruboto is a key skill which you will need to develop in order to master development for Android via ruboto. As we go along I'll start pointing you to the documentation. I highly recommend that you go check them out so that you get used to reading them alongside these tutorials.
 
 For starters let's talk about the MenuItem class. 
 
