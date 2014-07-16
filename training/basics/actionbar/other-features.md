@@ -1,6 +1,6 @@
 # Other Features of the Action Bar
 
-In this last lesson we'll learn how to change the color of the actionbar, overlay it, and how to stick an "Up Button" on it.
+In this last lesson we'll learn how to change the color of the actionbar, overlay it, and how to stick an "Up Button" on it. WARNING: some of these features are harder to do than I had at first anticipated. That means this lesson isn't actually finished and you may be dissatisfied with the answers I give. I recommend that you use the following as a launching point. I've left a lot of the nitty gritty for future lessons.
 
 ## Styling the Action Bar
 
@@ -72,7 +72,7 @@ end
 
 ## Overlaying the Action Bar
 
-You can hide and show the action bar by calling hide and show on the bar. To demo this I'm going to get rid of the action buttons (less code) and add some content.
+You can hide and show the action bar by calling hide and show on the bar. To demo this, I'm going to get rid of the action buttons (less code) and add some content.
 
 ```ruby
 require 'ruboto/widget'
@@ -114,9 +114,9 @@ end
 
 Now besides playing around with this and remembering how weight works (yes that's vertical weight here) I want you to notice something. Each time you show or hide the action bar the buttons change size and the text recenters itself.
 
-For a big app, this could be a problem, and the solution is to overlay the action bar. When the action bar is in overlay mode, the contents of the app sit underneath it. That means they don't get repositioned / resized when the actionbar comes and goes.
+For a big app, this could be a problem, and the solution is to overlay the action bar. When the action bar is in overlay mode, the contents of the app sit underneath it. That means they don't get repositioned / resized when the action bar comes and goes.
 
-If you check out the ActionBar API and look for "Overlay" you should be able to learn about `FEATURE_ACTION_BAR_OVERLAY`. The trick with this constant is that [the API](http://developer.android.com/reference/android/view/Window.html#FEATURE_ACTION_BAR_OVERLAY) says "if this feature is requested". When I first tried to use this, I was using methods like `addFlag` and `setFlag` but I should have used `request_feature`:
+If you check out the ActionBar API and look for "Overlay" you should be able to learn about `FEATURE_ACTION_BAR_OVERLAY`. The trick with this constant is that [the docs](http://developer.android.com/reference/android/view/Window.html#FEATURE_ACTION_BAR_OVERLAY) say "if this feature is requested". When I first tried to use this, I was using methods like `addFlag` and `setFlag` but I should have used `request_feature`:
 
 ```ruby
 require 'ruboto/widget'
@@ -158,7 +158,7 @@ end
 
 The last thing to note here is that the action bar is now covering up the content. That seems like a bad idea.
 
-Two most ways to fix this are:
+Two most commonly used ways to fix this are:
 
 1. Make your action bar transparent. `Color.argb(128, 0, 0, 0)`. I'll let you play with this one. (Be sure to look it up in the documentation!) 
 
@@ -205,7 +205,7 @@ end
 In the above example I found that 64 gave me the size I wanted. But what if instead of hard coding a padding, you want to have the API figure out the actual size of the Action Bar and use that? That would actually be the better approach! Since your app will be displayed on lots of different screen sizes and resolutions, you can expect the action bar to be a different size on each device. Since that's kind of a big topic and since it's actually pretty klunky in Ruboto it gets its own lesson: [Using Units and Attributes with Ruboto](https://github.com/KCErb/hello-ruboto/blob/master/training/aux/future_lesson.md).
 
 
-(NOTE: when I was first writing this tutorial, there was a glitch in Ruboto that called Padding instead of setPadding with the above code. The work around while the glitch was getting fixed, was to use use `set_padding`. So the lesson is, when in doubt, use the Java method, and then report the error to the fantastic folks over at Ruboto.)
+(NOTE: You may have noticed that in the above example I used `set_padding` instead of just `padding`. Normally JRuby helps convert language like this, so you *would* expect `padding` to call the `setPadding` method. Unfortunately, at the time of this writing, there seems to be a glitch. So the moral of the story is: if using the ruby version of a method doesn't work, try java version.)
 
 
 ## Creating and Using the Up Button
@@ -244,7 +244,6 @@ class ActionBarActivity
     end
   end
 end
-
 ```
 
 The first thing we'll do is add a dead Up button to the new activity. Before looking at the solution below, you should really take a moment to search the documentation and try to figure out how to do this. There's a function for it and the answer is only one line of code! You can do it, go search, then come back!
