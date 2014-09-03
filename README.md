@@ -22,3 +22,9 @@ Please feel free to make this better! Open an issue, submit a pull request, or s
 - [Adding Action Buttons](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/adding-buttons.md)
 - [Responding to Buttons](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/responding.md)
 - [Other Features of the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/other-features.md)
+
+[Styling the App](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/index.md)
+- [Using Images](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-images.md)
+- [Using Colors](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-colors.md)
+- [Accessing Attributes](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/accessing-attributes.md)
+- [Using Units](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-units.md)

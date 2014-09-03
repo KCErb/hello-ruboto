@@ -4,7 +4,7 @@ In this last lesson we'll learn how to change the color of the actionbar, overla
 
 ## Styling the Action Bar
 
-If you want to know a lot more about styling your app go check out [the lesson on styling](https://github.com/KCErb/hello-ruboto/blob/master/training/aux/future_lesson.md), but right here, we'll just talk about a couple of quick tricks for changing simple aspects of the look and feel of the action bar programmatically.
+If you want to know a lot more about styling your app go check out [the lesson on styling](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/index.md), but right here, we'll just talk about a couple of quick tricks for changing simple aspects of the look and feel of the action bar programmatically.
 
 For starters let's change the background color. If we look at the ActionBar API and look for methods relating to background, the following useful method comes up
 
@@ -17,13 +17,13 @@ Putting that all together we get
 ```ruby
 require 'ruboto/widget'
 require 'ruboto/util/toast'
- 
+
 ruboto_import_widgets :LinearLayout
 java_import "android.view.MenuItem"
 java_import "android.graphics.drawable.ColorDrawable"
 java_import "android.graphics.Color"
 
- 
+
 class ActionBarActivity
   def onCreate(bundle)
     super
@@ -45,14 +45,14 @@ class ActionBarActivity
     #add search
     item = menu.add(ni, 1, ni, "Search")
     item.set_icon R::drawable::ic_menu_search
-    item.show_as_action = MenuItem::SHOW_AS_ACTION_IF_ROOM 
+    item.show_as_action = MenuItem::SHOW_AS_ACTION_IF_ROOM
 
     #add settings
     item = menu.add(ni, 2, ni, "Settings")
     item.show_as_action = MenuItem::SHOW_AS_ACTION_NEVER
 
     #return true
-    true 
+    true
   end
 
   def on_options_item_selected(item)
@@ -76,28 +76,28 @@ You can hide and show the action bar by calling hide and show on the bar. To dem
 
 ```ruby
 require 'ruboto/widget'
- 
+
 ruboto_import_widgets :LinearLayout, :TextView, :Button
 java_import "android.graphics.drawable.ColorDrawable"
 java_import "android.graphics.Color"
- 
+
 class ActionBarActivity
   def onCreate(bundle)
     super
     bar = get_action_bar
-    
+
     self.content_view =
       linear_layout orientation: :vertical do
-        
+
         text_view text: 'What hath Matz wrought?!',
                   layout: {width: :match_parent},
                   gravity: :center, text_size: 48.0
-         
-        button text: 'Hide', 
+
+        button text: 'Hide',
                layout: {weight: 2},
                on_click_listener: proc {bar.hide}
-         
-        button text: 'Show', 
+
+        button text: 'Show',
                layout: {weight: 1},
                on_click_listener: proc { bar.show }
 
@@ -120,7 +120,7 @@ If you check out the ActionBar API and look for "Overlay" you should be able to 
 
 ```ruby
 require 'ruboto/widget'
- 
+
 ruboto_import_widgets :LinearLayout, :TextView, :Button
 java_import "android.graphics.drawable.ColorDrawable"
 java_import "android.graphics.Color"
@@ -131,19 +131,19 @@ class ActionBarActivity
     super
     get_window.request_feature(android.view.Window::FEATURE_ACTION_BAR_OVERLAY)
     bar = get_action_bar
-    
+
     self.content_view =
       linear_layout orientation: :vertical do
-        
+
         text_view text: 'What hath Matz wrought?!',
                   layout: {width: :match_parent},
                   gravity: :center, text_size: 48.0
-         
-        button text: 'Hide', 
+
+        button text: 'Hide',
                layout: {weight: 2},
                on_click_listener: proc { bar.hide }
-         
-        button text: 'Show', 
+
+        button text: 'Show',
                layout: {weight: 1},
                on_click_listener: proc { bar.show }
 
@@ -160,7 +160,7 @@ The last thing to note here is that the action bar is now covering up the conten
 
 Two most commonly used ways to fix this are:
 
-1. Make your action bar transparent. `Color.argb(128, 0, 0, 0)`. I'll let you play with this one. (Be sure to look it up in the documentation!) 
+1. Make your action bar transparent. `Color.argb(128, 0, 0, 0)`. I'll let you play with this one. (Be sure to look it up in the documentation!)
 
 2. Create a top margin. This is a good time to learn about XML attributes and their corresponding methods!
 
@@ -168,7 +168,7 @@ So let's head on over to the API on Linear Layouts and look up padding. Towards 
 
 ```ruby
 require 'ruboto/widget'
- 
+
 ruboto_import_widgets :LinearLayout, :TextView, :Button
 java_import "android.graphics.drawable.ColorDrawable"
 java_import "android.graphics.Color"
@@ -182,16 +182,16 @@ class ActionBarActivity
 
     self.content_view =
       linear_layout orientation: :vertical, set_padding: [0, 64, 0, 0] do
-        
+
         text_view text: 'What hath Matz wrought?!',
                   layout: {width: :match_parent},
                   gravity: :center, text_size: 48.0
-         
-        button text: 'Hide', 
+
+        button text: 'Hide',
                layout: {weight: 2},
                on_click_listener: proc { bar.hide }
-         
-        button text: 'Show', 
+
+        button text: 'Show',
                layout: {weight: 1},
                on_click_listener: proc { bar.show }
       end
@@ -202,7 +202,7 @@ class ActionBarActivity
 end
 ```
 
-In the above example I found that 64 gave me the size I wanted. But what if instead of hard coding a padding, you want to have the API figure out the actual size of the Action Bar and use that? That would actually be the better approach! Since your app will be displayed on lots of different screen sizes and resolutions, you can expect the action bar to be a different size on each device. Since that's kind of a big topic and since it's actually pretty klunky in Ruboto it gets its own lesson: [Using Units and Attributes with Ruboto](https://github.com/KCErb/hello-ruboto/blob/master/training/aux/future_lesson.md).
+In the above example I found that 64 gave me the size I wanted. But what if instead of hard coding a padding, you want to have the API figure out the actual size of the Action Bar and use that? That would actually be the better approach! Since your app will be displayed on lots of different screen sizes and resolutions, you can expect the action bar to be a different size on each device. Since that's kind of a big topic and since it's actually pretty klunky in Ruboto it gets its own lessons: [Using Units]((https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-units.md)) and [Accessing Attributes]((https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/accessing-attributes.md)).
 
 
 (NOTE: You may have noticed that in the above example I used `set_padding` instead of just `padding`. Normally JRuby helps convert language like this, so you *would* expect `padding` to call the `setPadding` method. Unfortunately, at the time of this writing, there seems to be a glitch. So the moral of the story is: if using the ruby version of a method doesn't work, try java version.)
@@ -224,7 +224,7 @@ ruboto_import_widgets :LinearLayout, :EditText, :Button
 class ActionBarActivity
   def on_create(bundle)
     super
-    self.content_view = 
+    self.content_view =
       linear_layout orientation: :horizontal do
         @input_box = edit_text layout: {weight: 1.0}, hint: "Enter Some Text!"
         button text: "Send", on_click_listener: proc { send_message(@input_box.text) }
@@ -256,7 +256,7 @@ ruboto_import_widgets :LinearLayout, :EditText, :Button
 class ActionBarActivity
   def on_create(bundle)
     super
-    self.content_view = 
+    self.content_view =
       linear_layout orientation: :horizontal do
         @input_box = edit_text layout: {weight: 1.0}, hint: "Enter Some Text!"
         button text: "Send", on_click_listener: proc { send_message(@input_box.text) }
@@ -281,7 +281,7 @@ class ActionBarActivity
 end
 ```
 
-Now all that's left is to tell the button what to do when it is pressed. If you weren't using Ruboto's convenient `start_ruboto_activtiy` you would declare the parent of the activity in the XML and the Up Button would do the right thing. But since we *are* using this nice method, we can't tell the new activity who it's parent is. Instead we must simply tell the button what to do. 
+Now all that's left is to tell the button what to do when it is pressed. If you weren't using Ruboto's convenient `start_ruboto_activtiy` you would declare the parent of the activity in the XML and the Up Button would do the right thing. But since we *are* using this nice method, we can't tell the new activity who it's parent is. Instead we must simply tell the button what to do.
 
 There are a lot of options here, and I would recommend reading [this](http://developer.android.com/training/implementing-navigation/ancestral.html) to get an idea of all the different things you could tell that button to do which would amount to what I've done here:
 
