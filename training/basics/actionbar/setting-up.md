@@ -2,7 +2,7 @@
 
 Seeing as how the action bar is to an app what water is to a fish, it comes
 stock and standard with apps that are designed for Android API 11 and above.
-So to get the action bar into our app we just need to tell Ruboto that we're 
+So to get the action bar into our app we just need to tell Ruboto that we're
 building an app for API 11 or greater.
 
 ## Make a new app
@@ -18,9 +18,9 @@ line tool some options to specify which API levels we are developing for.
 
 This tells Ruboto that we want our app to be backwards compatible from API 19 all the way back
 to 15. (Note: You should choose the API level that your emulator / device runs instead of 19 if
-you're on something older than KitKat). 
+you're on something older than KitKat).
 
-(Also Note: if you want to use the action bar with API 10 or below. It is possible, but I shall not speak 
+(Also Note: if you want to use the action bar with API 10 or below. It is possible, but I shall not speak
 of such dark things in this happy place.)
 
 Now do `cd action_bar` followed by `rake install start`.
@@ -38,7 +38,7 @@ ruboto_import_widgets :LinearLayout
 class ActionBarActivity
   def onCreate(bundle)
     super
-    self.content_view =`
+    self.content_view =
       linear_layout :orientation => :vertical do
       end
   end
