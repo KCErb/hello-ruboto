@@ -33,7 +33,7 @@ After reading up a bit on graphics from the API guides, I learned that a basic w
 
 In the past I've just used classes like this correctly but in this tutorial let's figure it out. First, find the "Public Constructors" section of the` ImageView` reference.
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/public-constructors.png" width="250px" />
+<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/public-constructors.png" width="500px" />
 
 This section tells us the different ways of creating an `ImageView`. The first argument (context) is passed in by default via ruboto. Since this class will take just context alone, that means we can create a blank `ImageView` without throwing any errors. Go ahead and try it. (Don't forget to import the `ImageView` widget!)
 
@@ -90,7 +90,7 @@ def on_create(bundle)
 end
 ```
 
-  If you run that you'll see that nothing happened! Why is that?
+  If you run that, you'll see that nothing happened! Why is that?
 
   Because the ImageView isn't inside of a layout; it doesn't have anywhere to go. I want my image to be just beneath the input text bar, so I'll put my horizontal layout inside of a vertical one like so:
 
@@ -144,7 +144,7 @@ background_image = image_view
 background_image.image_resource = Ruboto::R::drawable.foxes
 ```
 
-As you continue to explore Ruboto you'll find that between Java, Ruby and the very flexible Android API, there are lots of ways to write the same thing.
+As you continue to explore Ruboto, you'll find that between Java, Ruby and the very flexible Android API, there are lots of ways to write the same thing.
 
 
 [Previous - Styling](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/index.md) |
