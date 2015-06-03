@@ -1,30 +1,16 @@
 # Hello Ruboto!
 
-This is a tutorial for folks that know a bit about ruby and nothing about writing code for Android devices.
+This is the source code for a website called [Hello Ruboto](http://kcerb.github.io/hello-ruboto/).
 
-It more or less follows the tutorials found at http://developer.android.com/training/index.html, and
-attempts to copy their content with one major difference **These instructions are for Ruboto**. Yay!
+Hello Ruboto is a little bundle of [Ruboto](http://ruboto.org/) tutorials written by me to
+bridge the gap between writing a pure-Ruby Android App, and reading pure Java
+documentation.
 
-That means we won't be writing anything but sweet sweet Ruby.
+# Contributing
 
-Please feel free to make this better! Open an issue, submit a pull request, or send me an email.
+I would love to have contributions from anyone at all. I don't know anything about
+Java, I'm a pretty new Rubyist, and I'm not a professional writer. The only qualification
+I have to do a project like this is my enthusiasm for the topic!
 
-# Lessons
-
-[Building Your First App](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/index.md)
-- [Creating an Android Project](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/creating-project.md)
-- [Running Your App](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/running-app.md)
-- [Building a Simple User Interface](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/building-ui.md)
-- [Starting Another Activity](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/firstapp/starting-activity.md)
-
-[Adding the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/index.md)
-- [Setting Up the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/setting-up.md)
-- [Adding Action Buttons](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/adding-buttons.md)
-- [Responding to Buttons](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/responding.md)
-- [Other Features of the Action Bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/other-features.md)
-
-[Styling the App](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/index.md)
-- [Using Images](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-images.md)
-- [Using Colors](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-colors.md)
-- [Accessing Attributes](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/accessing-attributes.md)
-- [Using Units](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-units.md)
+So I welcome constructive criticism, Pull Requests, Issues, or anything else that anyone
+has to offer on the project.
