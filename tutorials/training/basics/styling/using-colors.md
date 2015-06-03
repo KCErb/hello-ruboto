@@ -1,6 +1,11 @@
-# Using Colors
-
-Over in the Action Bar lesson, I briefly [demoed](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/other-features.md#styling-the-action-bar) how to set the background color of the action bar. In this lesson we'll take a closer look at what happened there and experiment a little more with Drawables.
+---
+layout: page
+title: Using Colors
+category: styling
+order: 3
+permalink: /basics/styling/using-colors/
+---
+Over in the Action Bar lesson, I briefly [demoed]({{ site.baseurl }}/basics/actionbar/other-features/#styling-the-action-bar) how to set the background color of the action bar. In this lesson we'll take a closer look at what happened there and experiment a little more with Drawables.
 
 To demo the use of colors, we'll give the second activity of the Action Bar app a background color and a text color. Here's a reminder of what that app looks like:
 
@@ -82,9 +87,9 @@ def on_create(bundle)
 end
 ```
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/pink.png" width="250px" />
+{% include image.html width='250px' src='pink.png' page=page %}
 
-(Remember: You can always skip the `android.package` portion of a method call by importing the package with a line at the top of your file. If this is a new idea to you see [this](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/responding.md#let-me-introduce-you-to-the-docs) lesson.)
+(Remember: You can always skip the `android.package` portion of a method call by importing the package with a line at the top of your file. If this is a new idea to you see [this]({{site.baseurl}}/basics/actionbar/responding/#let-me-introduce-you-to-the-docs) lesson.)
 
 ### Constants
 
@@ -101,7 +106,7 @@ def on_create(bundle)
 end
 ```
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/cyan.png" width="250px" />
+{% include image.html width='250px' src='cyan.png' page=page %}
 
 ### Ints
 
@@ -117,7 +122,7 @@ def on_create(bundle)
 end
 ```
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/green.png" width="250px" />
+{% include image.html width='250px' src='green.png' page=page %}
 
 (If creating these by hand appeals to you, you should see [this](http://stackoverflow.com/questions/15852122/hex-transparency-in-colors) handy stackoverflow post.)
 
@@ -185,9 +190,5 @@ class ActionBarActivity
 end
 ```
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/colors1.png" width="250px" />
-
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/colors2.png" width="250px" />
-
-[Previous - Using Images](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-images.md) |
-[Next - Accessing Attributes](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/accessing-attributes.md)
+{% include image.html width='250px' src='colors1.png' page=page %}
+{% include image.html width='250px' src='colors2.png' page=page %}

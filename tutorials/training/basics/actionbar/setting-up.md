@@ -64,7 +64,7 @@ versions of Android.)
 
 We won't do this often, but we'll need to edit the manifest file found in `\AndroidManifest.xml`.
 
-There's a [line towards the bottom](https://github.com/KCErb/hello-ruboto/blob/master/static/actionbar/AndroidManifest.xml#L15) that says
+There's a [line towards the bottom](https://github.com/KCErb/hello-ruboto/blob/gh-pages/tutorials/apps/first_app/AndroidManifest.xml#L15) that says
 
 ```xml
   <uses-sdk android:minSdkVersion='10' android:targetSdkVersion='10'/>
@@ -76,7 +76,9 @@ change it to
  <uses-sdk android:minSdkVersion='11' android:targetSdkVersion='19'/>
 ```
 
-Next go to your `project.properties` file and change the target sdk there as well. (I know it tells you not to, but
+like [so](https://github.com/KCErb/hello-ruboto/blob/gh-pages/tutorials/apps/action_bar/AndroidManifest.xml#L15).
+
+Next go to your `project.properties` file and change the target sdk [there](https://github.com/KCErb/hello-ruboto/blob/gh-pages/tutorials/apps/action_bar/project.properties#L14) as well. (I know it tells you not to, but
 for now this seems to be the best way to alter your SDK targets after the fact.)
 
 Now just run `rake update_scripts:restart` and Ruboto will notice the xml changes, and recompile.

@@ -7,3 +7,5 @@ github_username:  kcerb
 
 # Build settings
 markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]

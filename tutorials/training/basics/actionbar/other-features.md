@@ -10,7 +10,7 @@ In this last lesson we'll learn how to change the color of the actionbar, overla
 
 ## Styling the Action Bar
 
-If you want to know a lot more about styling your app go check out [the lesson on styling](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/index.md), but right here, we'll just talk about a couple of quick tricks for changing simple aspects of the look and feel of the action bar programmatically.
+If you want to know a lot more about styling your app go check out [the lesson on styling]({{ site.baseurl }}/basics/styling/index/), but right here, we'll just talk about a couple of quick tricks for changing simple aspects of the look and feel of the action bar programmatically.
 
 For starters let's change the background color. If we look at the ActionBar API and look for methods relating to background, the following useful method comes up
 
@@ -210,7 +210,7 @@ class ActionBarActivity
 end
 ```
 
-In the above example I found that 64 gave me the size I wanted. But what if instead of hard coding a padding, you want to have the API figure out the actual size of the Action Bar and use that? That would actually be the better approach! Since your app will be displayed on lots of different screen sizes and resolutions, you can expect the action bar to be a different size on each device. Since that's kind of a big topic and since it's actually pretty klunky in Ruboto it gets its own lessons: [Using Units](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-units.md) and [Accessing Attributes](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/accessing-attributes.md).
+In the above example I found that 64 gave me the size I wanted. But what if instead of hard coding a padding, you want to have the API figure out the actual size of the Action Bar and use that? That would actually be the better approach! Since your app will be displayed on lots of different screen sizes and resolutions, you can expect the action bar to be a different size on each device. Since that's kind of a big topic and since it's actually pretty klunky in Ruboto it gets its own lessons: [Using Units]({{ site.baseurl }}/basics/styling/using-units/) and [Accessing Attributes]({{ site.baseurl }}/basics/styling/accessing-attributes/).
 
 
 (NOTE: You may have noticed that in the above example I used `set_padding` instead of just `padding`. Normally JRuby helps convert language like this, so you *would* expect `padding` to call the `setPadding` method. Unfortunately, at the time of this writing, there seems to be a glitch. So the moral of the story is: if using the ruby version of a method doesn't work, try java version.)

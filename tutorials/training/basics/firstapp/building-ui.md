@@ -161,7 +161,7 @@ end
 
 Once again, run the program to see what it looks like.
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex3.png" alt="I'll give you a hint." width="250px" />
+{% include image.html width='250px' src='ex3.png' page=page %}
 
 (If you're serious about learning this stuff from scratch, I highly highly recommend that you
 run the app each time after you update a line of code. You'll get to see it in the flesh and you'll
@@ -194,7 +194,6 @@ class FirstAppActivity
 end
 ```
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex4.png" alt="ooh button" width="250px" />
-
+{% include image.html width='250px' src='ex4.png' page=page %}
 
 And that's it. Crazy simple! Now let's start talking to the button!

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Introduction
+category-title: Building Your First App
 category: firstapp
 order: 1
 permalink: /basics/firstapp/index/

@@ -14,38 +14,36 @@ layout: default
   and how to translate them to JRuby. When we get to that, I'll assume that you're reading along with me, so please follow the links!
 </h3>
 
-<h2>
-  Building Your First App
-</h2>
+<!-- Generate Tutorial Links -->
+<!-- First, create an array of the tutorials by splitting a string, and get all the pages -->
+{% assign categories = "firstapp actionbar styling" | split: ' ' %}
+{% assign pages = site.pages | sort:'order' %}
 
-
-
-<div class="trigger">
-  {% assign pages = site.pages | sort:'order' %}
+<!-- Next go through each category and create its links -->
+{% for category in categories %}
+  <!-- Now find the title of this category and put it as a header -->
   {% for page in pages %}
-  {% if page.category == 'firstapp' %}
-  <div>
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-  </div>
-  {% endif %}
+    {% if page.category == category %}
+      <h2>
+        {{ page.category-title }}
+      </h2>
+      {% break %}
+    {% endif %}
   {% endfor %}
-</div>
 
-<br>
-
-<h2>
-  Action Bar
-</h2>
-
-<div class="trigger">
-  {% assign pages = site.pages | sort:'order' %}
-  {% for page in pages %}
-  {% if page.category == 'actionbar' %}
-  <div>
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  <!-- With the title in place, find all the pages that belong to this category and link'em up -->
+  <div class="trigger">
+    {% for page in pages %}
+    {% if page.category == category %}
+    <div>
+      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    </div>
+    {% endif %}
+    {% endfor %}
   </div>
-  {% endif %}
-  {% endfor %}
-</div>
+
+  <br>
+
+{% endfor %}
 
 </div>

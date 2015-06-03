@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Introduction
+category-title: Adding the Action Bar
 category: actionbar
 order: 1
 permalink: /basics/actionbar/index/

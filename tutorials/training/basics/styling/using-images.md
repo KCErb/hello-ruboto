@@ -1,5 +1,10 @@
-# Using Images
-
+---
+layout: page
+title: Using Images
+category: styling
+order: 2
+permalink: /basics/styling/using-images/
+---
 Let's start by learning how to reference external resources. Whether you're using stock icons from the android developer site, or your own background images you'll need to be able to tell ruboto where to find custom images.
 
 ## Changing the Launch Icon
@@ -15,11 +20,9 @@ So let's create a new launch icon for our app:
 3. Name them `ic_launcher.png` and put them in the appropriate folders.
 
 
-I used [this](https://github.com/KCErb/hello-ruboto/blob/master/static/styling/ic_launcher.png) file, and resized it using (Apple's) Preview.
+I used [this](https://github.com/KCErb/hello-ruboto/blob/gh-pages/tutorials/apps/styling/ic_launcher.png) file, and resized it using (Apple's) Preview.
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/launch_icon.png" width="250px" />
-
-
+{% include image.html width='250px' src='launch_icon.png' page=page %}
 
 ## Changing the Background
 
@@ -33,7 +36,7 @@ After reading up a bit on graphics from the API guides, I learned that a basic w
 
 In the past I've just used classes like this correctly but in this tutorial let's figure it out. First, find the "Public Constructors" section of the` ImageView` reference.
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/public-constructors.png" width="500px" />
+{% include image.html width='500px' src='public-constructors.png' page=page %}
 
 This section tells us the different ways of creating an `ImageView`. The first argument (context) is passed in by default via ruboto. Since this class will take just context alone, that means we can create a blank `ImageView` without throwing any errors. Go ahead and try it. (Don't forget to import the `ImageView` widget!)
 
@@ -113,8 +116,7 @@ end
 
 and this time I get:
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/styling/background-ss.png" width="250px" />
-
+{% include image.html width='250px' src='background-ss.png' page=page %}
 
 ### A Final Note on Construction
 
@@ -145,7 +147,3 @@ background_image.image_resource = Ruboto::R::drawable.foxes
 ```
 
 As you continue to explore Ruboto, you'll find that between Java, Ruby and the very flexible Android API, there are lots of ways to write the same thing.
-
-
-[Previous - Styling](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/index.md) |
-[Next - Using Colors](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-colors.md)

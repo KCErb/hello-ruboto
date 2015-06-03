@@ -1,8 +1,13 @@
-# Accessing Attributes
-
+---
+layout: page
+title: Accessing Attributes
+category: styling
+order: 4
+permalink: /basics/styling/accessing-attributes/
+---
 Your app has many attributes which are either set by the system (such as the [actionBarSize](http://developer.android.com/reference/android/R.attr.html#actionBarSize)) or are set by the developer (like gradient [angle](http://developer.android.com/reference/android/R.attr.html#angle)). Either way, you may find yourself needing to access these values and respond accordingly. A full list of them is sitting here: http://developer.android.com/reference/android/R.attr.html.
 
-The trick is that these are intended for use in the XML which we would like to avoid with Ruboto. As noted in the lesson on [overlaying the action bar](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/actionbar/other-features.md#overlaying-the-action-bar), things get a little clunky here.
+The trick is that these are intended for use in the XML which we would like to avoid with Ruboto. As noted in the lesson on [overlaying the action bar]({{ site.baseurl }}/basics/actionbar/other-features/#overlaying-the-action-bar), things get a little clunky here.
 
 ## Resolving Attributes
 
@@ -28,7 +33,3 @@ Putting that together looks like this:
 tv = android.util.TypedValue.new
 theme.resolv_attribute(android.R.attr.actionBarSize, tv, true)
 ```
-
-
-[Previous - Using Colors Project](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-colors.md) |
-[Next - Using Units](https://github.com/KCErb/hello-ruboto/blob/master/training/basics/styling/using-units.md)
