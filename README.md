@@ -12,5 +12,5 @@ I would love to have contributions from anyone at all. I don't know anything abo
 Java, I'm a pretty new Rubyist, and I'm not a professional writer. The only qualification
 I have to do a project like this is my enthusiasm for the topic!
 
-So I welcome constructive criticism, Pull Requests, Issues, or anything else that anyone
+So I welcome constructive criticism, pull requests, issues, or anything else that anyone
 has to offer on the project.
