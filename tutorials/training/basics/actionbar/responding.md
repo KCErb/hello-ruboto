@@ -21,9 +21,7 @@ When you want to use a Java class, like `MenuItem`, you have two options.
 
 1) Use the full name of the class. In the example on the previous page that's `android.view.MenuItem`. Go ahead and search for `MenuItem` over at the API website I just linked to. Without even going to the results, the first item in the drop down list should be `android.view.MenuItem`.
 
-
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/api_guides_search.png" alt="Don't click yet!" width="500px" />
-
+{% include image.html width='500px' src='api_guides_search.png' page=page %}
 
 That tells you the name of the class. Now go ahead and click on that search result to have a look at the docs for that class. You can see if you scroll down a bit, a list of constants that this class gives you access to such as `SHOW_AS_ACTION_IF_ROOM`. You can also see methods it has such as `add`.
 
@@ -58,7 +56,7 @@ end
 
 When one of your options is selected the `on_options_item_selected` callback gets called. Let's take a look at the API to see how this thing should work. Go on over to the [documentation](http://developer.android.com/reference/packages.html) and search for 'onOptionsItemSelected'. You won't get a quick result this time, but if you press enter, the first result should be the documentation for `android.app.Activity`. This is a big fat important class. To find out why the search tool brought you here, use your browser's find tool (usually command+f or ctrl+f) to find it on the page.
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/onoptions_api.png" alt="Read carefully" width="500px" />
+{% include image.html width='500px' src='onoptions_api.png' page=page %}
 
 The field at left that says `boolean` tells us that the method should return either true or false. At right we see that `onOptionsItemSelected` (which we interpret as `on_options_item_selected`) is called whenever an options item is selected, and it makes that item available.
 
@@ -227,4 +225,4 @@ end
 
 If all is well, you should see the screenshot below when selecting the search icon from the action bar.
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/searching.png" alt="Get it? Setting?!" width="250px" />
+{% include image.html width='250px' src='searching.png' page=page %}

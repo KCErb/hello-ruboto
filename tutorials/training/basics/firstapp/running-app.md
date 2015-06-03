@@ -22,7 +22,7 @@ the app store. This app has the stuff Ruboto needs to do its magic.
 
 If you see the following on your screen then all is well and you are ready to start your training!
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/quick_start.png" alt="What hath Matz wrought?!" width="250px" />
+{% include image.html width='250px' src='quick_start.png' page=page %}
 
 
 If not, don't sweat it! Please email me so that I can make these instructions better. The startup

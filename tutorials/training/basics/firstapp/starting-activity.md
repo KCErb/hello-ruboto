@@ -129,7 +129,7 @@ class FirstAppActivity
 end
 ```
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex5.png" alt="Hmm . . . breadsticks" width="500px" />
+{% include image.html width='500px' src='ex5.png' page=page %}
 
 Did it work on your device / emulator? Activitatious!
 
@@ -233,7 +233,7 @@ You may also want to note that `@input_box` could also be just `input_box` since
 
 Here's the expected result
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex6.png" alt="Hello Ruboto!" width="500px" />
+{% include image.html width='500px' src='ex6.png' page=page %}
 
 
 ## Some Final Goodies

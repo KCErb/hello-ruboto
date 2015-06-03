@@ -53,8 +53,7 @@ end
 
 If you run `rake update_scripts:restart` or `rake update_scripts start` then you should get the following
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/empty_app.png" alt="An empty app, pure and undefiled." width="250px" />
-
+{% include image.html width='250px' src='empty_app.png' page=page %}
 
 ## Changing the API level
 

@@ -108,8 +108,7 @@ Ta da. You did it! Now you have a working app. Go ahead and try it out by runnin
 if you already did this and just want to update your app to reflect the new changes run `rake update_scripts` and
 restart your app. As long as your changes are in your ruby files then `rake_update_scripts` will update your app.
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex1.png" alt="Tiny EditText" width="250px" />
-
+{% include image.html width='250px' src='ex1.png' page=page %}
 
 You'll notice that the box starts out small and gets bigger as you type stuff in. Lets
 make this thing a bit prettier by stating what its width should be ahead of time. The
@@ -132,8 +131,7 @@ class FirstAppActivity
 end
 ```
 
-<img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/firstapp/ex2.png" alt="Bigger EditText" width="250px" />
-
+{% include image.html width='250px' src='ex2.png' page=page %}
 
 Hey nifty. Here's how weight works:
 if I have two widgets each of `weight: 1` then they'll both get 50% of the screen. If

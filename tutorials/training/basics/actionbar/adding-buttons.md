@@ -39,7 +39,7 @@ here is that `true` at the end of the method. Unless you want to dig deeper into
 Java, then just take this as an axiom of the `options_menu` (and others as we'll see): no matter what
 you do, you need to make sure that the method returns true at the end.
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/simple_search.png" alt="First step" width="250px" />
+{% include image.html width='250px' src='simple_search.png' page=page %}
 
 ## Adding an Icon
 
@@ -122,5 +122,4 @@ class ActionBarActivity
 end
 ```
 
-
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/search_icon.png" alt="First step" width="250px" />
+{% include image.html width='250px' src='search_icon.png' page=page %}

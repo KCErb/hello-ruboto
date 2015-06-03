@@ -14,7 +14,8 @@ If you want to know a lot more about styling your app go check out [the lesson o
 
 For starters let's change the background color. If we look at the ActionBar API and look for methods relating to background, the following useful method comes up
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/background_api.png" alt="Background drawable" width="500px" />
+{% include image.html width='500px' src='background_api.png' page=page %}
+
 
 This tells us that the action bar has a method for setting the background and that we need to hand that method a `Drawable`. In this lesson I'll show you how to create a solid color `Drawable` without much comment since I'd like to save the details of this beefy class for other lessons. Now scroll up to the top of the guide. Somewhere in there it should tell you that you can get an instance of `ActionBar` via `get_action_bar`.
 
@@ -73,7 +74,7 @@ class ActionBarActivity
 end
 ```
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/orange_action.png" alt="Mmm . . . Orange Bars" width="500px" />
+{% include image.html width='500px' src='orange_action.png' page=page %}
 
 
 ## Overlaying the Action Bar
@@ -115,7 +116,7 @@ class ActionBarActivity
 end
 ```
 
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/hide_show.png" alt="2 parts hide, one part show. Shake well." width="250px" />
+{% include image.html width='250px' src='hide_show.png' page=page %}
 
 
 Now besides playing around with this and remembering how weight works (yes that's vertical weight here) I want you to notice something. Each time you show or hide the action bar the buttons change size and the text recenters itself.
@@ -160,7 +161,8 @@ class ActionBarActivity
   end
 end
 ```
-  <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/overlay.png" alt="Overlay" width="250px" />
+
+{% include image.html width='250px' src='overlay.png' page=page %}
 
 The last thing to note here is that the action bar is now covering up the content. That seems like a bad idea.
 
@@ -218,7 +220,7 @@ In the above example I found that 64 gave me the size I wanted. But what if inst
 
 Another thing that folks like to do with an Action Bar is put an "Up Button" on there.
 
- <img src="https://raw.githubusercontent.com/KCErb/hello-ruboto/master/static/actionbar/actionbar-up.png" alt="Google is Creative Commons right?" width="250px" />
+{% include image.html width='250px' src='actionbar-up.png' page=page %}
 
 The up button is there so that users know where home is. Your interface should have a clear logical home, and whenever a user leaves home, you should provide a way back. To demo this feature, we're going to just paste in that code from the `firstapp` which used two activities. Here's what that looks like without the Up button as a reminder.
 

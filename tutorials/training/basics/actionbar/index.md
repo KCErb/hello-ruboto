@@ -11,7 +11,7 @@ permalink: /basics/actionbar/index/
 The action bar is the place at the top of your app where you will
 put settings and other tools.
 
-![Yay Design!]({{site.baseurl}}/img/actionbar/action_bar.png)
+{% include image.html width='300px' src='action_bar.png' page=page %}
 
 
 In this lesson we'll learn how to put an action bar on our app and do some basic things with it. This lesson will also start introducing you to the Android documentation.
