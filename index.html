@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<h3>
+  Hello! <br><br>This set of tutorials will walk through the <a href="https://developer.android.com/training/index.html">Android developer trainings</a>
+  and translate things into Ruby. The two styles of development are actually very different, so it wont be a word-for-word
+  translation. Instead, my goal is to produce the same final programs.
+<br><br>
+  These tutorials <i>will</i> get you started developing in Ruboto, but they aren't really worthwhile unless they
+  also teach you how to use the Android documentation. So throughout these tutorials I will introduce you to the Android docs,
+  and how to translate them to JRuby. When we get to that, I'll assume that you're reading along with me, so please follow the links!
+</h3>
+
+<h2>
+  Building Your First App
+</h2>
+
+
+
+<div class="trigger">
+  {% assign pages = site.pages | sort:'order' %}
+  {% for page in pages %}
+  {% if page.category == 'firstapp' %}
+  <div>
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<br>
+
+<h2>
+  Action Bar
+</h2>
+
+<div class="trigger">
+  {% assign pages = site.pages | sort:'order' %}
+  {% for page in pages %}
+  {% if page.category == 'actionbar' %}
+  <div>
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+</div>

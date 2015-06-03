@@ -1,0 +1,9 @@
+# Site settings
+title: Hello Ruboto
+email: iamkcerb@gmail.com
+description: Hello Ruboto is a guide for getting started with Ruboto app development
+baseurl: '/hello-ruboto'
+github_username:  kcerb
+
+# Build settings
+markdown: redcarpet

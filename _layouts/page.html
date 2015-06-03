@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  <hr>
+
+<!-- Previous / Next Footer Liquid -->
+
+  <!-- find next and previous pages 'order' value -->
+  {% assign pages = site.pages | sort:'order' %}
+  {% assign this_page = page %}
+  {% assign next_page_order = this_page.order | plus:1 %}
+  {% assign prev_page_order = this_page.order | minus:1 %}
+
+  <!-- Create home link if no previous page available -->
+  {% if prev_page_order < 1 %}
+  <div>
+    <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+  </div>
+  {% endif %}
+
+<!--  Go through all pages -->
+  {% for page in pages %}
+    <!-- figure out which one has the same category and previous order count -->
+    {% if page.category == this_page.category and page.order == prev_page_order %}
+      <div>
+        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">Previous - {{ page.title }}</a>
+      </div>
+    {% endif %}
+
+    <!-- figure out which one has the same category and next order count -->
+    {% if page.category == this_page.category and page.order == next_page_order %}
+      <div>
+        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"><p>Next - {{ page.title }}</a>
+      </div>
+      <!-- create this flag so that at end of list we can tell we've reached the end -->
+      {% assign found_next_page = true %}
+
+    {% endif %}
+  {% endfor %}
+
+  <!-- Create home link if a 'next page' was never found -->
+  {% unless found_next_page %}
+  <div>
+    <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+  </div>
+  {% endunless %}
+</div>
