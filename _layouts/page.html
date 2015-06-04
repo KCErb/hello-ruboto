@@ -13,7 +13,7 @@ layout: default
 
   <hr>
 
-<!-- Previous / Next Footer Liquid -->
+  <!-- Previous / Next Footer Liquid -->
 
   <!-- find next and previous pages 'order' value -->
   {% assign pages = site.pages | sort:'order' %}
@@ -28,7 +28,7 @@ layout: default
   </div>
   {% endif %}
 
-<!--  Go through all pages -->
+  <!--  Go through all pages -->
   {% for page in pages %}
     <!-- figure out which one has the same category and previous order count -->
     {% if page.category == this_page.category and page.order == prev_page_order %}
@@ -54,4 +54,5 @@ layout: default
     <a class="page-link" href="{{ site.baseurl }}/">Home</a>
   </div>
   {% endunless %}
+
 </div>
