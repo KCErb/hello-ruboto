@@ -65,6 +65,7 @@ A linear layout will either stack the widgets on top of each other
 (`orientation: vertical`) or it will have them flow side by side (`orientation: horizontal`).
 
 OK, so let's just stick a blank one in there and go on from here:
+
 ```ruby
 require 'ruboto/widget'
 
