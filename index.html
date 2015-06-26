@@ -16,7 +16,7 @@ layout: default
 
 <!-- Generate Tutorial Links -->
 <!-- First, create an array of the tutorials by splitting a string, and get all the pages -->
-{% assign categories = "firstapp actionbar styling" | split: ' ' %}
+{% assign categories = "first_app" | split: ' ' %}
 {% assign pages = site.pages | sort:'order' %}
 
 <!-- Next go through each category and create its links -->
