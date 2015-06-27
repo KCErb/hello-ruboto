@@ -13,6 +13,9 @@ One of my primary focuses in these tutorials is to set you free, give you wings 
 
 In these tutorials, I'm going to spend some time teaching you how to understand these guides and convert them into Ruboto. If you're already familiar with the Android API, or the Java programming language, then some of this might seem a little tedious because I'm going to assume you are like me: completely unfamiliar with Java, and new to the Android APIs.
 
+If you get hung-up anywhere just go checkout the example apps over in [the github repo for this site](https://github.com/KCErb/hello-ruboto/tree/gh-pages/apps). I wrote them to test that these tutorials do what I say they do
+so you can use them as a guide.
+
 ## Guides vs Reference
 
 Before I go further, I want to be clear that when I say the "guides" I mean [these](https://developer.android.com/guide/index.html) and when I say the API "reference" or docs I mean [this](https://developer.android.com/reference/packages.html).

@@ -31,8 +31,8 @@ class FirstAppActivity
   def on_create(bundle)
     super
     layout = linear_layout orientation: :horizontal do
-      edit_text layout: {weight: 1.0}, hint: "Enter Some Text!"
-      button text: "Send", on_click_listener: proc { howdy }
+      edit_text layout: { weight: 1.0 }, hint: 'Enter Some Text!'
+      button text: 'Send', on_click_listener: proc { howdy }
     end
     self.content_view = layout
   end
@@ -55,8 +55,8 @@ class FirstAppActivity
   def on_create(bundle)
     super
     layout = linear_layout orientation: :horizontal do
-      edit_text layout: {weight: 1.0}, hint: "Enter Some Text!"
-      b = button text: "Send"
+      edit_text layout: { weight: 1.0 }, hint: 'Enter Some Text!'
+      b = button text: 'Send'
       b.set_on_click_listener { howdy }
     end
     self.content_view = layout
@@ -106,8 +106,8 @@ class FirstAppActivity
   def on_create(bundle)
     super
     layout = linear_layout orientation: :horizontal do
-      edit_text layout: {weight: 1.0}, hint: "Enter Some Text!"
-      button text: "Send", on_click_listener: proc { send_message }
+      edit_text layout: { weight: 1.0 }, hint: 'Enter Some Text!'
+      button text: 'Send', on_click_listener: proc { send_message }
     end
     self.content_view = layout
   end
@@ -116,14 +116,15 @@ class FirstAppActivity
     start_ruboto_activity do
       def on_create(bundle)
         super
-        message = "Testing test test. Breadsticks. Breadsticks. Breadsticks. Very good."
+        message = 'Testing test test. Breadsticks. Breadsticks. Breadsticks. Very good.'
         self.content_view = text_view text: message
       end
     end
   end
 end
-
 ```
+
+{% include image.html width='250px' src='breadsticks.png' page=page %}
 
 Did it work on your device / emulator? Activitatious!
 I love the smell of breadsticks in my phone!
@@ -141,13 +142,13 @@ From the aforementioned Ruboto Wiki:
 > class MyActivity
 >   def on_create(bundle)
 >     super
->     set_content_view(text_view(:text => "Hello, World"))
+>     set_content_view(text_view(:text => 'Hello, World'))
 >   end
 > end
 >
 >
 > # To start MyActivity, call the following method from the context of an Activity.
-> start_ruboto_activity "MyActivity"
+> start_ruboto_activity 'MyActivity'
 > ```
 
 For our little app it looks like this:
@@ -162,13 +163,13 @@ class FirstAppActivity
     super
     self.content_view =
       linear_layout orientation: :horizontal do
-        edit_text layout: {weight: 1.0}, hint: "Enter Some Text!"
-        button text: "Send", on_click_listener: proc { send_message }
+        edit_text layout: { weight: 1.0 }, hint: 'Enter Some Text!'
+        button text: 'Send', on_click_listener: proc { send_message }
       end
   end
 
   def send_message
-    start_ruboto_activity "DisplayMessageActivity"
+    start_ruboto_activity 'DisplayMessageActivity'
   end
 end
 
@@ -179,7 +180,7 @@ ruboto_import_widgets :TextView
 class DisplayMessageActivity
   def on_create(bundle)
     super
-    message = "Testing test test. Breadsticks. Breadsticks. Breadsticks. Very good."
+    message = 'Testing test test. Breadsticks. Breadsticks. Breadsticks. Very good.'
     self.content_view = text_view text: message
   end
 end
@@ -191,6 +192,8 @@ The last thing we need in order to finish out this app is to get the text entere
 
 ### Block-based
 
+The block based approach might be a little surprising:
+
 ```ruby
 require 'ruboto/widget'
 
@@ -200,8 +203,8 @@ class FirstAppActivity
   def on_create(bundle)
     super
     layout = linear_layout orientation: :horizontal do
-      @input_box = edit_text layout: {weight: 1.0}, hint: "Enter Some Text!"
-      button text: "Send", on_click_listener: proc { send_message }
+      @input_box = edit_text layout: { weight: 1.0 }, hint: 'Enter Some Text!'
+      button text: 'Send', on_click_listener: proc { send_message }
     end
     self.content_view = layout
   end
@@ -218,22 +221,21 @@ class FirstAppActivity
     end
   end
 end
-
 ```
-
-This is a little trixy.
 
 First of all we needed the text from the edit box. So we named it `@input_box` and called the `text` method on it. So far so good.
 
-Next we need to handle the special scoping that goes on here. The trouble is that an instance variable like `@input_box` isn't available in the scope of the `start_ruboto_activity` block, but a variable (like message above) *is* available. So we stash `@input_box.text` onto `message`.
+Next we need to handle the special scoping that goes on here. The trouble is that an instance variable like `@input_box` isn't available in the scope of the `start_ruboto_activity` block, but a regular variable (like `message` above) *is* available. So we stash `@input_box.text` onto `message`.
 
 Now `message` *is* available inside of the block, but it's not available inside the `on_create`. This is one of those rare cases where a class-variable is not a bad idea. The class variable **is** available inside of `on_create` so we stash the contents of `message` into `@@message` and set *that* as the TextView.
 
-If you can find a better way to make this work let me know!
+The final result (if you edit the size of the text, I'll leave that to you as an exercise!) is:
+
+{% include image.html width='500px' src='hello_ruboto.png' page=page %}
 
 ## Class-based
 
-If the new activity is sitting in it's own class, then any data you want passed on should be passed into `start_ruboto_activity` in the `extras` field like this:
+If the new activity is sitting in its own class, then any data you want passed on should be passed into `start_ruboto_activity` in an `extras` field like this:
 
 ```ruby
 def send_message
@@ -252,7 +254,11 @@ def on_create(bundle)
 end
 ```
 
-An `extra` in Android is like a hash in Ruby. Extras are used to pass information around in Intents just like you see in the above example. If you look at the [Intent documentation](https://developer.android.com/reference/android/content/Intent.html) you'll see lots of methods for putting information into the Intent (`put` methods) and lots of methods for getting the information back out. Internally, `start_ruboto_activity` stores the hash you give it as string-extras. So you can access values here as `getStringExta` or `getExtra`.
+An `extra` in Android is like a hash in Ruby. Extras are used to pass information around in Intents just like you see in the above example. If you look at the [Intent documentation](https://developer.android.com/reference/android/content/Intent.html) you'll see lots of methods for putting information into the Intent (`put` methods) and lots of methods for getting the information back out. Internally, `start_ruboto_activity` stores the hash you give it as a list of `StringExtra`s. That means you can access values here as `getStringExta` or `getExtra` followed by the key from the hash as shown above.
+
+***
+**Gotcha** - One gotcha from above is that I needed to call `message.to_s` but I didn't need the `to_s` for the block-based. That's because the `getText` method from an `EditText` doens't return a string! The block-based approach didn't notice because we set the text of the text-view using some Ruby tricks that did the `to_s` along the way. But in the class-based approach. If we don't append `to_s` then the `Extra` will pass a non-string onto the next activity and you'll run into some issues.
+***
 
 ## Conclusion
 
