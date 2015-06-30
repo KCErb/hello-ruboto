@@ -3,7 +3,7 @@ layout: page
 title: Genymotion
 category: toolbox
 order: 2
-permalink: /android/toolbox/genymotion/
+permalink: /toolbox/genymotion/
 ---
 
 Genymotion is an Android emulator that actually works. If you don't have a device,
