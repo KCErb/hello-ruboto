@@ -5,7 +5,7 @@ layout: default
 <div class="home">
 
 <h3>
-  Hello! 
+  Hello!
   <br><br>
   This set of tutorials will walk through the <a href="https://developer.android.com/training/index.html">Android developer trainings</a>
   and translate things into Ruby. The two styles of development are actually very different, so it wont be a word-for-word
@@ -20,7 +20,7 @@ layout: default
 </h3>
 <!-- Generate Tutorial Links -->
 <!-- First, create an array of the tutorials by splitting a string, and get all the pages -->
-{% assign categories = "first_app" | split: ' ' %}
+{% assign categories = "first_app toolbox" | split: ' ' %}
 {% assign pages = site.pages | sort:'order' %}
 
 <!-- Next go through each category and create its links -->

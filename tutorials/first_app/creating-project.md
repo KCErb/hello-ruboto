@@ -36,18 +36,17 @@ Platform SDK android-16  : Found
 
 ```
 
-I don't mind the old HAXM stuff because I'm going to be using my phone. I'd like to
-get us using [Genymotion](https://www.genymotion.com/) but that'll have to be on hold
-until I figure out how to make it work.
+I don't mind the old HAXM stuff because I'm going to be using my phone. I also don't mind
+because when I don't have the phone available I use [Genymotion](https://www.genymotion.com/). Genymotion
+is a free emulator that actually works! It takes a little setting up so I've written a [tutorial on using Genymotion](http://kcerb.github.io/hello-ruboto/toolbox/genymotion/).
+If you don't have a device (i.e. phone or tablet) then I recommend reading that tutorial before moving on.
 
-If you're using a phone like me, be sure to enable debug mode on the phone, there
+If you are using a device, be sure to enable debug mode on the phone, there
 are nice instructions [here](http://www.kingoapp.com/root-tutorials/how-to-enable-usb-debugging-mode-on-android.htm).
 
-If you don't have a phone, and you don't want to pioneer combining Genymotion with
-Ruboto, then you'll need to use the native device emulator and I won't be able to help
-you much. But [this wiki page](https://github.com/ruboto/ruboto/wiki/Setting-Up-a-Ruboto-Development-Environment#generate-an-avd) is the place to start.
+If you don't have a device, and you don't want to Genymotion, then you'll need to use the native device emulator and I won't be able to help you much. But [this wiki page](https://github.com/ruboto/ruboto/wiki/Setting-Up-a-Ruboto-Development-Environment#generate-an-avd) is the place to start.
 
-One of the tools that this process downloaded is the SDK manager. It's not something that I've used much
+**Also**, One of the tools that this process downloaded is the SDK manager. It's not something that I've used much
 since my initial install so I'm not an expert with it. But if you'd like to know more about it you can read [this article](https://developer.android.com/tools/help/sdk-manager.html).
 
 ## Using gen app to get started
@@ -77,7 +76,6 @@ the app store. This app has the stuff Ruboto needs to do its magic.
 If you see the following on your screen then all is well and you are ready to start your training!
 
 {% include image.html width='250px' src='quick_start.png' page=page %}
-
 
 If not, don't sweat it! Please email me so that I can make these instructions better. The startup
 phase is the hardest part of this whole process and I want to make it awesome, so please contact me!
